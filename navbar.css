@@ -1,0 +1,79 @@
+body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: oldlace;
+    font-family: 'Press Start 2P', cursive;
+}
+nav{
+    background-color: #95CF57;
+    height: 5rem;
+    box-shadow: 0 6px 6px -6px rgba(0, 0, 0, 0.3);
+}
+.center{
+    display: inline-flex;
+    padding-top: 10px;
+ text-shadow: yellow 2px 2px;
+}
+.logo{
+    margin: 10px;
+    margin-left: 20px;
+    float: left;
+}
+.center{
+    color:#4D92DA;
+}
+.list{
+   list-style: none;
+   height: auto;
+   display: block;
+   width: fit-content;
+   float: right;
+   display: none;
+}
+.list li{
+    width: 200px;
+      padding: 1rem;
+      border-bottom: dashed #4D92DA 2px;
+      background: #D0CF42;
+      /* put background color inside li so that the text can be centerd ; */
+}
+.list li a{
+    text-decoration: none;
+    color: #4D92DA;
+
+}
+.list li a:hover{
+    color:#e15d66;
+}
+/* ------------------------------------------ */
+/* animated list */
+.fade-item {
+    transition: 2s all ease-in-out;
+    opacity: 0;
+}
+.fadein {
+    animation: fadeIn 0.9s 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+/* ------------------------------------------ */
+.toggle{
+    margin: 20px;
+    border: none;
+    background: none;
+    color: #4D92DA;
+    font-size: 30px;
+    cursor: pointer;
+    float: right;
+    text-shadow: 2px 2px yellow;
+}
+
